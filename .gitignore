@@ -1,0 +1,237 @@
+/.buildpath
+/.cache
+/.metadata
+/.project
+/.settings
+/.vscode
+atlassian*
+/nbproject
+/robots.txt
+/pub/robots.txt
+/sitemap
+/sitemap.xml
+/pub/sitemap
+/pub/sitemap.xml
+/.idea
+/.gitattributes
+/app/config_sandbox
+/app/etc/env.php
+/app/code/Magento/TestModule*
+/lib/internal/flex/uploader/.actionScriptProperties
+/lib/internal/flex/uploader/.flexProperties
+/lib/internal/flex/uploader/.project
+/lib/internal/flex/uploader/.settings
+/lib/internal/flex/varien/.actionScriptProperties
+/lib/internal/flex/varien/.flexLibProperties
+/lib/internal/flex/varien/.project
+/lib/internal/flex/varien/.settings
+/node_modules
+/.grunt
+/Gruntfile.js
+/package.json
+/.php_cs
+/.php_cs.cache
+/grunt-config.json
+/pub/media/*.*
+!/pub/media/.htaccess
+/pub/media/attribute/*
+!/pub/media/attribute/.htaccess
+/pub/media/analytics/*
+/pub/media/catalog/*
+!/pub/media/catalog/.htaccess
+/pub/media/customer/*
+!/pub/media/customer/.htaccess
+/pub/media/downloadable/*
+!/pub/media/downloadable/.htaccess
+/pub/media/favicon/*
+/pub/media/import/*
+!/pub/media/import/.htaccess
+/pub/media/logo/*
+/pub/media/custom_options/*
+!/pub/media/custom_options/.htaccess
+/pub/media/theme/*
+/pub/media/theme_customization/*
+!/pub/media/theme_customization/.htaccess
+/pub/media/wysiwyg/*
+!/pub/media/wysiwyg/.htaccess
+/pub/media/tmp/*
+!/pub/media/tmp/.htaccess
+/pub/media/captcha/*
+/pub/static/*
+!/pub/static/.htaccess
+
+/var/*
+!/var/.htaccess
+/vendor/*
+!/vendor/.htaccess
+# track amasty issue
+!/vendor/amasty
+/vendor/amasty/*
+!/vendor/amasty/module-mass-order-actions
+/vendor/amasty/module-mass-order-actions/*
+!/vendor/amasty/module-mass-order-actions/view
+/vendor/amasty/module-mass-order-actions/view/*
+!/vendor/amasty/module-mass-order-actions/view/base
+/vendor/amasty/module-mass-order-actions/view/base/web/*
+!/vendor/amasty/module-mass-order-actions/view/base/web/js
+/vendor/amasty/module-mass-order-actions/view/base/web/js/*
+!/vendor/amasty/module-mass-order-actions/view/base/web/js/grid
+/vendor/amasty/module-mass-order-actions/view/base/web/js/grid/*
+!/vendor/amasty/module-mass-order-actions/view/base/web/js/grid/massactions.js
+/generated/*
+!/generated/.htaccess
+**/*.DS_Store
+
+/pub/media/*
+**/*.swp
+**/*~
+
+# Metadata
+/.buildpath
+/.cache
+/.metadata
+/.project
+/.settings
+atlassian*
+/nbproject
+/sitemap
+/.idea
+/.gitattributes
+**/*.php_cs
+**/*.travis.yml
+**/*.user.ini
+/.buildpath
+/.cache
+/node_modules
+**/*.grunt
+**/*.php_cs.cache
+**/*.iml
+**/*.ipr
+
+# vim
+**/*.swp
+**/*.swo
+**/*.un~
+**/*~
+**/*.bak
+**/*.sw[abcdefghijklmnop]
+
+# Magento specific configuration
+/app/.htaccess
+/app/bootstrap.php
+.htaccess
+.htaccess.sample
+
+# Files re-generated through composer
+/CHANGELOG.md
+/CONTRIBUTING.md
+/COPYING.txt
+/ISSUE_TEMPLATE.md
+/LICENSE_AFL.txt
+/LICENSE.txt
+deploy.log
+/bin
+/dev
+!dev/tools/grunt/configs/themes.js
+/lib
+/phpserver
+/pub
+/setup
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Eclipse project files
+**/*.classpath
+**/*.project
+
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+
+
+# Dump file
+**/*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+**/.cab
+**/.msi
+**/.msix
+**/.msm
+**/.msp
+
+# Windows shortcuts
+**/*.lnk
+
+# Compiled source #
+###################
+**/*.com
+**/*.class
+**/*.dll
+**/*.exe
+**/*.o
+**/*.so
+
+# Packages
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+**/*.7z
+**/*.dmg
+**/*.gz
+**/*.iso
+**/*.jar
+**/*.rar
+**/*.tar
+**/*.tar.gz
+**/*.tar.bz2
+**/*.zip
+
+# Logs and databases
+**/*.log
+**/*.sql
+**/*.sqlite
+
+# OS generated files
+**/*.DS_Store
+**/*.DS_Store?
+**/*._*
+**/*.Spotlight-V100
+**/*.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Images
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.gif
+**/*.bmp
+**/*.svg
+**/*.ico
+**/*.psd
+
+# Video/Audio
+**/*.wmv
+**/*.mpg
+**/*.mpeg
+**/*.mp4
+**/*.mov
+**/*.flv
+**/*.avi
+**/*.ogv
+**/*.ogg
+**/*.webm
+
+# Audio
+**/*.wav
+**/*.mp3
+**/*.wma

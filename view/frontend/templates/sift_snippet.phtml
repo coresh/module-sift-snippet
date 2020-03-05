@@ -1,0 +1,22 @@
+<!-- BEGIN SIFT -->
+<script type="text/javascript">
+  var _sift = window._sift = window._sift || [];
+  _sift.push(['_setAccount', '<?php echo $block->getSiftAccountId(); ?>']);
+  _sift.push(['_setUserId', '<?php echo $block->getSiftUserId(); ?>']);
+  _sift.push(['_setSessionId', '<?php echo $block->getSessionId(); ?>']);
+  _sift.push(['_trackPageview']);
+
+ (function() {
+   function ls() {
+     var e = document.createElement('script');
+     e.src = 'https://cdn.sift.com/s.js';
+     document.body.appendChild(e);
+   }
+   if (window.attachEvent) {
+     window.attachEvent('onload', ls);
+   } else {
+     window.addEventListener('load', ls, false);
+   }
+ })();
+</script>
+<!-- END SIFT -->

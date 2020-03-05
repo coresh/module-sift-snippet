@@ -1,0 +1,24 @@
+{
+    "name": "coresh/module-sift-snippet",
+    "description": "sift.com JavaScript Snippet integration",
+    "type": "magento2-module",
+    "homepage": "https://github.com/coresh/module-sift-snippet",
+    "license": [
+        "proprietary"
+    ],
+    "authors":[
+        {
+            "name":"Dmitrii Dmitriev",
+            "email":"1753595@gmail.com",
+            "homepage": "https://www.upwork.com/freelancers/~01ee8a418a1ac1c823?viewMode=1"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Sift\\Snippet\\": ""
+        }
+    }
+}

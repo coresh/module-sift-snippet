@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+  <body>
+    <!-- <container name="sift.before.body.end" as="sift_before_body_end" label="Sift before body end" after="before.body.end">   -->
+    <!--   <block class="Sift\Snippet\Block\Customer" name="sift_snippet" after="-" template="Sift_Snippet::sift_snippet.phtml"/> -->
+    <!-- </container>                                                                                                             -->
+    <referenceContainer name="before.body.end">
+	<block ifconfig="fraud_protection/sift/enable" class="Sift\Snippet\Block\Customer" name="sift_snippet" after="-" template="Sift_Snippet::sift_snippet.phtml" cacheable="false" />
+    </referenceContainer>
+  </body>
+</page>

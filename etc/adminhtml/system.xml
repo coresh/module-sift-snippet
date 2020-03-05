@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+* Dmitrii Dmitriev 1753595@gmail.com
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to info@magespecialist.it so we can send you a copy immediately.
+ *
+ * @category   Sift
+ * @package    Sift_Snippet
+ * @copyright  Copyright (c) 2020 Dmitrii Dmitriev 1753595@gmail.com
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+  <system>
+    <section id="fraud_protection" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="410" translate="label" type="text">
+      <label>Fraud Protection</label>
+      <resource>Magento_Sales::fraud_protection</resource>
+      <tab>sales</tab>
+      <group id="sift" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="9" type="text">
+        <group id="config" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="2" translate="label comment">
+          <label>Configuration</label>
+          <field id="user_id" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="1" translate="label">
+            <comment><![CDATA[Sift.com User Id (email), e.g: email@example.com]]></comment>
+            <config_path>fraud_protection/sift/user_id</config_path>
+            <depends>
+              <field id="enable">1</field>
+            </depends>
+            <label>Sift.com User Id</label>
+          </field>
+          <field id="testMerchantID" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="3" translate="label">
+            <comment><![CDATA[sift.com Production Account ID]]></comment>
+            <config_path>fraud_protection/sift/testMerchantID</config_path>
+            <depends>
+              <field id="enable">1</field>
+              <field id="test">1</field>
+            </depends>
+            <label>Sandbox Account ID</label>
+          </field>
+          <field id="testFrontendKey" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="4" translate="label" type="obscure">
+            <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+            <comment><![CDATA[sift.com Sandbox Beacon Key]]></comment>
+            <config_path>fraud_protection/sift/testFrontendKey</config_path>
+            <depends>
+              <field id="enable">1</field>
+              <field id="test">1</field>
+            </depends>
+            <label>Sandbox Beacon Key</label>
+          </field>
+          <field id="liveMerchantID" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="3" translate="label">
+            <comment><![CDATA[sift.com Production Account ID]]></comment>
+            <config_path>fraud_protection/sift/liveMerchantID</config_path>
+            <depends>
+              <field id="enable">1</field>
+              <field id="test">0</field>
+            </depends>
+            <label>Production Account ID</label>
+          </field>
+          <field id="liveFrontendKey" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="7" translate="label" type="obscure">
+            <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
+            <comment><![CDATA[sift.com Production Beacon Key]]></comment>
+            <config_path>fraud_protection/sift/liveFrontendKey</config_path>
+            <depends>
+              <field id="enable">1</field>
+              <field id="test">0</field>
+            </depends>
+            <label>Production Beacon Key</label>
+          </field>
+        </group>
+      </group>
+    </section>
+  </system>
+</config>
