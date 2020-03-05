@@ -3,6 +3,7 @@
     "description": "sift.com JavaScript Snippet integration",
     "type": "magento2-module",
     "homepage": "https://github.com/coresh/module-sift-snippet",
+    "version": "1.0.0",
     "license": [
         "proprietary"
     ],
