@@ -7,7 +7,9 @@
 
 ### Install:
 
-```composer require coresh/module-sift-snippet ```
+```composer config repositories.coresh_module-sift-snippet git https://github.com/coresh/module-sift-snippet```
+
+```composer require coresh/module-sift-snippet```
 
 ```bin/magento module:enable Sift_Snippet --clear-static-content```
 
