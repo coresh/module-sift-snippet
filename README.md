@@ -1,9 +1,5 @@
 ## module-sift-snippet
-### Magento 2 JavaScript sift.com snippet integration
-
-### Details:
-
-[https://sift.com/developers/docs/php/javascript-api/overview](https://sift.com/developers/docs/php/javascript-api/overview)
+### Magento 2 JavaScript -> sift.com snippet integration
 
 ### Install:
 
